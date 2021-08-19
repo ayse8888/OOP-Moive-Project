@@ -1,0 +1,190 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    background: #F8F4E9;
+  }
+  
+  h2, h3 {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+  }
+  
+  .container {
+      padding-top: 32px;
+  }
+  
+  .movieDiv {
+    text-align: center;
+  }
+  
+  #movie-backdrop, .trailer {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .movieImage {
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #464545;
+  }
+  
+  #actors {
+      margin: 24px 16px 0 0;
+  }
+  
+  .movie-info span, .single-actors span {
+    font-weight: bold;
+    font-style: italic
+  }
+  
+  .language {
+    text-transform: capitalize;
+  }
+  
+  .five-actors, .movie-production, .all-actors, .search-movies {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  img {
+    cursor: pointer;
+  }
+  
+  .production-image {
+    width: 180px;
+    height: 150px;
+    border-radius: 10px;
+    border: .5px solid #dddddd;
+    /* box-shadow: 0 0 5px 5px #f77c0a; */
+    box-shadow: 15px 10px 5px #dddddd;
+  }
+  
+  .similar-movies, .actor-movies {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    overflow-x: scroll;
+  }
+  
+  .similar-movies .row, .actor-movies .row {
+    margin-right: 3rem;
+    align-items: flex-end;
+  }
+  
+  .actor-image, .similar-movies-images {
+    width: 210px;
+    height: 270px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .actor-movies-images, .search-movies-images, .search-not-found-image {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 1rem;
+  }
+  
+  .row>* {
+    max-width: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+  ::-webkit-scrollbar-thumb:horizontal {
+    background: rgb(46, 45, 45); 
+    border-radius: 10px;
+  }
+  
+  .single-actors {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .single-actor-image {
+    width: 48%;
+    max-width: 470px;
+    height: 530px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #464545;
+  }
+  
+  .single-actor-description {
+    width: 48%;
+    padding: 2rem;
+    /* border: 5px solid #575857; */
+    margin-left: 1rem;
+    border-radius: 10px;
+    max-height: 530px;
+    overflow-y: auto;
+    /* background-image: linear-gradient(to bottom, #a19e9e, #b7b4b4, #cecbcb, #e5e2e2, #fcf9f9); */
+    background: #f2ead6;
+  }
+  
+  .popular-movies-image, .toprated-movies-image, .upcoming-movies-image {
+    width: 235px;
+    height: 270px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .popular-movies-title,.toprated-movies-title, .upcoming-movies-title, .search-movies-title {
+    max-width: 235px;
+  }
+  
+  .genres {
+    text-align: center;
+  }
+  
+  .genres-list {
+    margin-bottom: .3rem;
+  }
+  
+  .genres-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .genres-link:hover {
+    color: gray;
+  }
+  
+  .about-page {
+    height: 100vh;
+  }
+  
+  .about-description {
+    font-size: 20px;
+  }
+  
+  .footer-text {
+    color: #F8F4E9;
+  }
+  
+  .footer-text:hover {
+    color: #814242;
+  }
+  
+  @media screen and (max-width: 540px) {
+    .actors-section h3, .production-section h3, .similar-section h3, .actor-movies-section h3 {
+      margin-left: 1rem;
+    }
+  
+    .similar-movies .row {
+      padding: 0 0 0 1rem;
+    }
+  
+    .single-actor-image, .single-actor-description {
+      width: 100%;
+      height: 350px;
+    }
+  
+    .single-actor-description {
+      margin-top: 2rem;
+    }
+  }
+  
